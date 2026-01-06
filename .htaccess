@@ -1,0 +1,25 @@
+# Configuración para Sistema de Padrón Digital
+RewriteEngine On
+
+# Eliminar barras dobles en URLs
+RewriteCond %{THE_REQUEST} //+
+RewriteRule ^(.*)$ /$1 [R=301,L]
+
+# Redirecciones para compatibilidad (solo si es necesario)
+# RewriteRule ^public/(.*)$ /$1 [R=301,L]
+
+# Manejo de archivos no existentes (comentado para evitar conflictos)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d  
+# RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Configuraciones PHP
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+
+# Configuraciones de seguridad
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>

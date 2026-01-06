@@ -1,0 +1,352 @@
+/* Modern card/table styles for Mapa and Biblioteca */
+.modern-table {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(97,18,50,0.07);
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.modern-table th, .modern-table td {
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.75em 1em;
+}
+.modern-table thead th {
+    background: #611232;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+}
+.modern-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+.modern-table tbody tr:last-child {
+    border-bottom: none;
+}
+.modern-table tbody tr:hover {
+    background: #f8f6fa;
+}
+
+/* Institutional button style */
+.btn-gob {
+    background: #611232;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.btn-gob:hover, .btn-gob:focus {
+    background: #3e0c1b;
+    color: #fff;
+}
+
+/* Card for info blocks */
+.info-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(97,18,50,0.07);
+    padding: 1.5em 1.2em;
+    margin-bottom: 2em;
+}
+/* Force header/navbar to be visually identical everywhere */
+.gob-header-unificado, .gob-header-unificado * {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-variation-settings: normal !important;
+    box-sizing: border-box !important;
+}
+.gob-header-unificado {
+    background: #611232 !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    min-width: 100vw !important;
+}
+.gob-header-unificado .container-fluid {
+    max-width: 100vw !important;
+    padding: 0.5em 0 0.1em 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.gob-header-unificado .gob-logo {
+    max-height: 48px !important;
+    margin-bottom: 0.1em !important;
+}
+.gob-header-unificado .gob-mx, .gob-header-unificado .gob-mx2 {
+    color: #fff !important;
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+}
+.gob-header-unificado .gob-mx2 {
+    font-weight: 600 !important;
+    font-size: 1em !important;
+}
+.gob-header-unificado .navbar, .gob-header-unificado .navbar * {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    background: #611232 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.gob-header-unificado .navbar {
+    background: #611232 !important;
+    border: none !important;
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+    margin: 0 !important;
+    font-size: 1.05rem !important;
+}
+.gob-header-unificado .navbar .nav-link, .gob-header-unificado .navbar .navbar-brand {
+    font-size: 1.05rem !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    line-height: 1.1 !important;
+    min-height: 42px !important;
+    height: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    letter-spacing: 0.5px !important;
+}
+.gob-header-unificado .navbar .navbar-brand {
+    margin-right: 2em !important;
+    font-weight: bold !important;
+    font-size: 1.15rem !important;
+}
+.gob-header-unificado .navbar-nav {
+    margin-left: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1em !important;
+}
+@media (max-width: 991px) {
+  .gob-header-unificado .navbar .container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .gob-header-unificado .navbar-nav {
+    flex-direction: column !important;
+    gap: 0.2em !important;
+    margin-left: 0 !important;
+  }
+}
+/* Unify main content area for all public pages (login, registro, index, biblioteca) */
+.main-content {
+        max-width: 500px;
+        margin: 2.5em auto 2em auto;
+        background: #fff;
+        border: 1px solid #611232;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px rgba(97,18,50,0.07);
+        padding: 2.5em 2em 2em 2em;
+}
+@media (max-width: 600px) {
+    .main-content {
+        padding: 1.2em 0.5em 1em 0.5em;
+    }
+}
+body { margin-top: 0 !important; padding-top: 0 !important; font-family: 'Montserrat', Arial, sans-serif !important; }
+.gob-header-unificado, .gob-header-unificado * {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-variation-settings: normal !important;
+}
+
+/* Unify header appearance across all public pages */
+.gob-header-unificado {
+    background: #611232 !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.gob-header-unificado .container-fluid {
+    max-width: 100vw !important;
+    padding: 0.5em 0 0.1em 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.gob-header-unificado .gob-logo {
+    max-height: 48px !important;
+    margin-bottom: 0.1em !important;
+}
+.gob-header-unificado .gob-mx, .gob-header-unificado .gob-mx2 {
+    color: #fff !important;
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+}
+.gob-header-unificado .gob-mx2 {
+    font-weight: 600 !important;
+    font-size: 1em !important;
+}
+.gob-header-unificado .navbar, .gob-header-unificado .navbar * {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+}
+.gob-header-unificado .navbar {
+    background: #611232 !important;
+    border: none !important;
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+    margin: 0 !important;
+    font-size: 1.05rem !important;
+}
+.gob-header-unificado .navbar .nav-link, .gob-header-unificado .navbar .navbar-brand {
+    font-size: 1.05rem !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    line-height: 1.1 !important;
+    min-height: 42px !important;
+    height: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    letter-spacing: 0.5px !important;
+}
+.gob-header-unificado .navbar .navbar-brand {
+    margin-right: 2em !important;
+    font-weight: bold !important;
+    font-size: 1.15rem !important;
+}
+.gob-header-unificado .navbar-nav {
+    margin-left: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1em !important;
+}
+@media (max-width: 991px) {
+  .gob-header-unificado .navbar .container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .gob-header-unificado .navbar-nav {
+    flex-direction: column !important;
+    gap: 0.2em !important;
+    margin-left: 0 !important;
+  }
+}
+
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.book-cover {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.placeholder-cover {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.reader-card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 10px;
+}
+
+.reader-header {
+    background: linear-gradient(135deg, #4dade1, #2c81ba);
+    color: white;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.book-content {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'Georgia', serif;
+    color: #333;
+    min-height: 400px;
+}
+
+.page-info {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.page-controls {
+    margin-top: 20px;
+}
+
+.search-box {
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+/* Registro/Login form unified style */
+.form-auth {
+    background: #fff;
+    border: 1px solid #611232;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(97,18,50,0.07);
+    max-width: 500px;
+    margin: 2.5em auto 2em auto;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.form-auth .form-label {
+    font-weight: 600;
+    color: #611232;
+}
+.form-auth .form-control, .form-auth .form-select {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1rem;
+}
+.form-auth .form-control:focus, .form-auth .form-select:focus {
+    border-color: #611232;
+    box-shadow: 0 0 0 0.2rem rgba(97,18,50,0.08);
+}
+.form-auth .gob-btn {
+    background: #611232;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.form-auth .gob-btn:hover {
+    background: #3e0c1b;
+}
+.form-auth textarea.form-control {
+    min-height: 80px;
+}
